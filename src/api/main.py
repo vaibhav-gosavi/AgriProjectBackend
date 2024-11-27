@@ -28,11 +28,11 @@ app.add_middleware(
 API_URL = os.getenv("AGMARKNET_API_URL")
 CSV_FILE_PATH = "data/agriculture_data.csv"  # Save data here
 
-@app.get("/")
+@app.get("/api")
 async def root():
     return {"message": "Hello World"}
 
-@app.get("/fetch-data")
+@app.get("/api/fetch-data")
 def fetch_and_save_data():
     """
     Fetch data from the API (CSV format) and save it to a CSV file.

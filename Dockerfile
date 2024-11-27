@@ -20,4 +20,5 @@ COPY . .
 EXPOSE 8000
 
 # Step 7: Run the FastAPI application
-CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
+CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "${PORT}", "--workers", "4", "--log-level", "debug"]
+

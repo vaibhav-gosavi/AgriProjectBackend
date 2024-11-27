@@ -18,7 +18,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://agri-project-frontend-9hftotri4-vaibhav-gosavis-projects.vercel.app","http://localhost:5173"],  # Adjust based on your frontend URL
+    allow_origins=["https://agri-project-frontend-9hftotri4-vaibhav-gosavis-projects.vercel.app","http://localhost:5173","https://agri-project-frontend-l9qapyk3u-vaibhav-gosavis-projects.vercel.app/"],  # Adjust based on your frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
